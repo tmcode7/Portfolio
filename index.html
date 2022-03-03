@@ -7,6 +7,7 @@
     <title>Welcome to TMWEB</title>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Khand:wght@300;700&family=Righteous&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
 </head>
 <body>
     <main>
@@ -14,10 +15,10 @@
         <nav>
             <a href='#'> <img class='logo' src="tmweblogo.png"></a>
             <ul class="socials">
-                <li><a href='https://twitter.com/mawuenatord'> <img
-                            src="https://img.icons8.com/ios-glyphs/30/4a90e2/twitter--v1.png" /></a></li>
+                <li><a href='https://twitter.com/mawuenatord'> <img src="https://img.icons8.com/ios-glyphs/30/4a90e2/twitter--v1.png" /></a></li>
                 <li><a href='#'> <img src="https://img.icons8.com/ios-glyphs/30/4a90e2/github.png" /></a></li>
                 <li><a href='#'> <img src="https://img.icons8.com/ios-glyphs/30/4a90e2/linkedin-circled--v1.png" /></a></li>
+                <li><a href='tel:+233271922680'> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAACaUlEQVRIie2WT0gUYRjGf++Mf9LwkCetBG1bCCwknI2WLlJ28hx1yYpqd0WJIAKho5fo0CGRdskgsJPeswKJqLDa3UthSJsoaCRURkSirc7bIZcmd3YdmC0IfG7f8z3f+5s/37zzwab+kcRvgdbE2w5UEgI7isTmMCSSiuwezRmGX7CoxDeAAuzE1oTTKHNLha/PVmW3Ll1DOYXSn+oKXila1JsanIO8O24enqjIVi/dQ+kBahB6D8SnLI/FPSsPXPW5/CLQ5szY2DdQ9b0fioIx5LRLLmwlpk7+XbDSWCB79dDtyRoXf84ja7Y4GD65r9P6pax5Ps82JOIBPitIxGnk7WpFxgR1e9wYyPv13tq32WDFM4ryUQ2609HgyAYXkn/HqgwVyI4no4HhQoUERlYrafYCXcvny4pnHgJH/wwa7clYYMxLUS9y7VwqxiVg2enZYteWCloQnI4GXity2emJMtiamNpXKnDRphCKZ4YVjuXGiswYq2Y42d007xdc9CexXL14RuD576vURjVXRkMD03V+wRu2wfDgRG12peIxsDfnKTJThna8iAXf/DJUrETmhCL1W8pXbz07u+ebbzDA/v7J7Wa5+QTY5Vj4BSWGqQvY0qdwcG3mA9CbigaGEFFfYIDQwHSdba7cF2jxuCRlwIWXseC426Tng0Cyu2m+ouzHYec730CWDU9D8Xd9vsAA4+eaF5arF9sVCnaw9fUV7fINBnjV2fI9HQseR+hhXZNxkyJ3SwLOKRUNDohBq8CDIrFHNZVmr9tESU4V1s1MG0IncATYBswo3EG+9qejVrYUjE39f/oJoFy594zC9pUAAAAASUVORK5CYII=">+233271922680</a></li>
             </ul>
     
         </nav>
@@ -31,7 +32,66 @@
     
     <section id="aboutme">
         <h2>About Me</h2>
-        <p class="bodytext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium non tempore, quia laborum ratione, laboriosam iste quibusdam error animi vel nisi molestias saepe nihil quasi exercitationem reiciendis odit odio ipsam?s</p>
+        <p class="bodytext">Hi, My name is is Mawuena. <br>I am a full stack web developer based in Accra, Ghana.<br>
+            I build fully responsive websites and web based applications for businesses of any size.
+            In addition to building an online presence, I build software that seek to solve everyday business 
+            problems.<br>
+            Check out some of the <a href="#projects">projects</a> i have worked on and feel free to <a href="#contact">contact</a> me for your business needs today.
+        </p>
     </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="grid2x2">
+            <div class="box box1"><div>one</div></div>
+            <div class="box box2"><div>two</div></div>
+            <div class="box box3"><div>three</div></div>
+            <div class="box box4"><div>four</div></div>
+        </div>
+          
+          
+    </section>
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+
+        <div class="container">
+
+            <form id="contact" action="" method="post" action="mailto:mawuenatord7@gmail.com">
+              <h3>Quick Contact</h3>
+              <h4>Contact us today, and get reply with in 24 hours!</h4>
+              <fieldset>
+                <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+              </fieldset>
+              <fieldset>
+                <input placeholder="Your Email Address" type="email" tabindex="2" required>
+              </fieldset>
+              <fieldset>
+                <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+              </fieldset>
+              <fieldset>
+                <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+              </fieldset>
+              <fieldset>
+                <button name="submit" type="submit" value="Send Email" id="contact-submit" data-submit="...Sending">Submit</button>
+              </fieldset>
+            </form>
+
+           
+          </div>
+    </section>
+
+    <footer>
+        <a href='#'> <img class='logo' src="tmweblogo.png"></a>
+        <ul class="socials">
+            <li><a href='https://twitter.com/mawuenatord'> <img
+                        src="https://img.icons8.com/ios-glyphs/30/4a90e2/twitter--v1.png" /></a></li>
+            <li><a href='#'> <img src="https://img.icons8.com/ios-glyphs/30/4a90e2/github.png" /></a></li>
+            <li><a href='#'> <img src="https://img.icons8.com/ios-glyphs/30/4a90e2/linkedin-circled--v1.png" /></a></li>
+            <li><a href='tel:+233271922680'> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAACaUlEQVRIie2WT0gUYRjGf++Mf9LwkCetBG1bCCwknI2WLlJ28hx1yYpqd0WJIAKho5fo0CGRdskgsJPeswKJqLDa3UthSJsoaCRURkSirc7bIZcmd3YdmC0IfG7f8z3f+5s/37zzwab+kcRvgdbE2w5UEgI7isTmMCSSiuwezRmGX7CoxDeAAuzE1oTTKHNLha/PVmW3Ll1DOYXSn+oKXila1JsanIO8O24enqjIVi/dQ+kBahB6D8SnLI/FPSsPXPW5/CLQ5szY2DdQ9b0fioIx5LRLLmwlpk7+XbDSWCB79dDtyRoXf84ja7Y4GD65r9P6pax5Ps82JOIBPitIxGnk7WpFxgR1e9wYyPv13tq32WDFM4ryUQ2609HgyAYXkn/HqgwVyI4no4HhQoUERlYrafYCXcvny4pnHgJH/wwa7clYYMxLUS9y7VwqxiVg2enZYteWCloQnI4GXity2emJMtiamNpXKnDRphCKZ4YVjuXGiswYq2Y42d007xdc9CexXL14RuD576vURjVXRkMD03V+wRu2wfDgRG12peIxsDfnKTJThna8iAXf/DJUrETmhCL1W8pXbz07u+ebbzDA/v7J7Wa5+QTY5Vj4BSWGqQvY0qdwcG3mA9CbigaGEFFfYIDQwHSdba7cF2jxuCRlwIWXseC426Tng0Cyu2m+ouzHYec730CWDU9D8Xd9vsAA4+eaF5arF9sVCnaw9fUV7fINBnjV2fI9HQseR+hhXZNxkyJ3SwLOKRUNDohBq8CDIrFHNZVmr9tESU4V1s1MG0IncATYBswo3EG+9qejVrYUjE39f/oJoFy594zC9pUAAAAASUVORK5CYII=">+233271922680</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
