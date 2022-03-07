@@ -12,6 +12,7 @@ nav {
     width: 100%;
     align-items: center;
     padding: 0 20px;
+    z-index: 2;
 }
 
 .logo {
@@ -35,59 +36,75 @@ ul{
 
 
 /*Hero section styling*/
-.hero {
-    display: grid;
-    align-items: center;
-    padding-bottom: 30px;
-    height: 100vh;
+
+
+.herocontainer {
+    position:relative;
+    height:100vh;
+    width:100%;
+    overflow:hidden;
 }
 
-h1 {
-    font-weight:700;
-    font-size:8rem;
-    color:#15a2f3;
-    text-align: center;
-    margin-bottom:0px;
-    transition: 1s;
+.imagecontainer {
+    position:relative;
+    background-image: url(images/sam-moqadam-HYDUXzWSF5I-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 0vh;
+    animation: scale 10s;
 }
 
-h1:hover {
-    text-shadow: 0 1px 0 #15a2f3, 0 2px 0 #15a2f3,
-        0 3px 0 #ccc, 0 4px 0 #ccc,
-        0 5px 0 #ccc, 0 6px 0 #ccc,
-        0 7px 0 #ccc, 0 8px 0 #ccc,
-        0 9px 0 #ccc, 0 10px 0 #ccc,
-        0 11px 0 #ccc, 0 12px 0 #ccc,
-        0 20px 30px #15a2f371;
+@keyframes scale {
+   0% {
+       transform:scale(1.5);
+   } 
+
+   10% {
+       transform:scale(1);
+   }
 }
 
-p{
-    font-weight:700;
-    font-size:2.5rem;
-    color:#15a2f3;
-    text-align:center;
+.overlay {
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background: rgba(0, 0, 0, 0.377);
+    z-index: 1;
 }
 
-.hero a{
-    font-weight:500;
-    font: size 20px;;
-    color:#15a2f3;
-    background-color:white;
-    text-align:center;
-    text-decoration: none;
-    padding: 10px; 
-    border:0px;
+.herotext {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    position:absolute;
+    top:35%;
+    bottom: 10%;
+    font-size: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 2;
+    padding-left: 20px;
 }
 
-.hero a:hover {
+.name {
+    color: #15a2f3;
+    font-weight: 700;
+}
+
+.herolink {
     border: 2px solid #15a2f3;
-    background-color: #15a2f3;
-    color: white;
-    font-size: 20px;
-    animation-duration: 1s;
+    width: 175px;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
 }
-
-
 /*about section */
 #aboutme {
     background-color: #15a2f3;
@@ -120,43 +137,130 @@ section p a:hover {
     color: black;
 }
 
-
+.resume-cta {
+    border: 2px solid #fff;
+    width: 175px;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 30px;
+}
 /*Projects section*/
-#projects {
-    height: 100vh;
+.project-container {
+    width:100%;
+    height:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.5rem;
+    margin:20px;
 }
 
-#projects h2 {
+#projects .header {
     font-weight: 700;
     font-size: 40px;
     color:black;
     text-align:center;
 }
+.projects {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-flow:wrap;
+}
 
-.grid2x2 {
-    min-height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding-bottom: 100px;
-  }
-  .grid2x2 > div {
-    display: flex; 
-    flex-basis: calc(50% - 40px);  
-    justify-content: center;
-    flex-direction: column;
-  }
-  .grid2x2 > div > div {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-  }
-  
-  .box { margin: 20px; }
-  .box1 { background-color: red; }
-  .box2 { background-color: orange; }
-  .box3 { background-color: purple; }
-  .box4 { background-color: grey; }
+.levelground-project {
+    width: 400px;
+    height: 400px;
+    background: white;
+    position: relative;
+    margin: 50px;
+    background-image: url(images/camila-sanabria-42f0omhWez4-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.jabneel-project {
+    width: 400px;
+    height: 400px;
+    background: white;
+    position: relative;
+    margin: 50px;
+    background-image: url(images/sam-moqadam-HYDUXzWSF5I-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.travelbros-project {
+    width: 400px;
+    height: 400px;
+    background: white;
+    position: relative;
+    margin: 50px;
+    background-image: url(images/annie-spratt-qyAka7W5uMY-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.resort-project {
+    width: 400px;
+    height: 400px;
+    background: white;
+    position: relative;
+    margin: 50px;
+    background-image: url(images/upgraded-points-KVym2PAn1gA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.text-container {
+    position:absolute;
+    height:75px;
+    width:100%;
+    z-index:2;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    overflow: hidden;
+}
+
+.text-container:hover {
+    height: 350px;
+    background-color:#15a2f349;
+}
+
+.name {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.content {
+    padding: 20px 5px;
+    font-size: 1rem;
+    margin-left: 15px;
+}
+
+.button {
+    border: 5px solid #15a2f3;
+    background: white;
+    width: 125px;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.button a {
+    text-decoration: none;
+    color: black;
+
+} 
+
+.text-container img {
+   display: block;
+   margin-top: 10px;
+   margin-left: 15px;
+}
 
 
 /*Contact section*/
@@ -324,24 +428,58 @@ ul{
     
 
     h1 {
-        font-size: 5rem;
+        font-size: 1.5rem;
     }
 
     p {
         font-size: 1.5rem;
     }
 
-    .grid2x2 {
-        display: block;
-        width: 100%;
-        text-align: center;
+    /*PROJECTS*/
+    .levelground-project {
+        width: 300px;
+        height: 400px;
+        background: white;
+        position: relative;
+        margin: 50px;
+        background-image: url(images/camila-sanabria-42f0omhWez4-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .jabneel-project {
+        width: 300px;
+        height: 400px;
+        background: white;
+        position: relative;
+        margin: 50px;
+        background-image: url(images/sam-moqadam-HYDUXzWSF5I-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .travelbros-project {
+        width: 300px;
+        height: 400px;
+        background: white;
+        position: relative;
+        margin: 50px;
+        background-image: url(images/annie-spratt-qyAka7W5uMY-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .resort-project {
+        width: 300px;
+        height: 400px;
+        background: white;
+        position: relative;
+        margin: 50px;
+        background-image: url(images/upgraded-points-KVym2PAn1gA-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
     }
 
-    div.box {
-        height: 20vh;
-        border: 1px solid black;
-        margin: 15px;
-    }
 
     footer{
         display: block;
