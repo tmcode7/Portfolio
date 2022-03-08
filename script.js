@@ -6,3 +6,9 @@ $(document).ready(function() {
         $('#contact').submit();
     });
 });
+
+const banner = document.querySelectorAll('.text-container').addEventListener('click', openUp)
+function openUp() {
+    banner.style.height = '350px'
+
+}

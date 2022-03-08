@@ -272,6 +272,7 @@ section p a:hover {
    display: block;
    margin-top: 10px;
    margin-left: 15px;
+   width: 10%;
 }
 
 
@@ -465,7 +466,7 @@ ul{
         background: white;
         position: relative;
         margin: 50px;
-        background-image: url(images/sam-moqadam-HYDUXzWSF5I-unsplash.jpg);
+        background-image: url(images/tpc.PNG);
         background-size: cover;
         background-position: center;
     }
@@ -490,6 +491,11 @@ ul{
         background-image: url(images/upgraded-points-KVym2PAn1gA-unsplash.jpg);
         background-size: cover;
         background-position: center;
+    }
+
+    .text-container:active {
+        height: 350px;
+        background-color:#15a2f349;
     }
 
 
