@@ -7,8 +7,9 @@ $(document).ready(function() {
     });
 });
 
-const banner = document.querySelectorAll('.text-container').addEventListener('click', openUp)
-function openUp() {
+const banner = document.querySelector('.text-container')
+function openUp(event) {
     banner.style.height = '350px'
 
 }
+banner.addEventListener('ontouchstart', openUp)
