@@ -47,7 +47,7 @@ ul{
 
 .imagecontainer {
     position:relative;
-    background-image: url(images/sam-moqadam-HYDUXzWSF5I-unsplash.jpg);
+    background-image: url(images/maik-jonietz-_yMciiStJyY-unsplash.jpg);
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -72,7 +72,7 @@ ul{
     width:100%;
     top:0;
     left:0;
-    background: rgba(0, 0, 0, 0.377);
+    background: #15a2f350;
     z-index: 1;
 }
 
